@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
         df = pd.concat([df_btc, df_comm], ignore_index=True)
 
-        df.to_sql("bronze_cotacoes", engine, if_exists="append", index=False)
+        df.to_sql("bronze_cotacoes_py", engine, if_exists="append", index=False)
 
         print("Dados inseridos com sucesso!")
 
